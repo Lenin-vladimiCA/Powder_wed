@@ -1,0 +1,218 @@
+
+/**************************************EMCABEZADO DE LA PAGINA WED*******************************************************/
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*aqui se modifica todo el emcabezado referente ancho,centrado
+y todo loq que tiene que ver con su area */
+header{
+    padding: 10px;
+    display: flex;
+    height: 70px;
+    justify-content:space-between;
+    background:#2196f3 ;
+    align-items: center;
+
+     
+
+}
+/*aqui se modifican los enlaces de navegador*/
+ nav a {
+    text-decoration:none;
+    font-size: 25px;
+    font-weight: 600; /*esto le da a los profundidad a la letras  es( igual a la etiqueta <b> o strong )*/
+    padding-right: 10px; /* este padding hace un espacio hacia la derecha entre los enlaces*/
+    
+
+}
+nav a:hover{
+    background: #E3FDFD;
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+/*aqui el logo */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/*aqui se modificia la imagen del logo */
+ .logo img{
+    height: 50px;
+    border-radius: 25px;
+  
+ }
+/************************************AQUI TERMINA EL EMCABEZADO DE LA pagina*********************************************/
+
+
+
+/********************************************CAJAS DE LOS ARTICULOS******************************************************/
+
+   
+ #body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+ }
+ .contenedor{
+  padding: 0;
+  margin: 0;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+
+}
+/*esto modifica las imagenes de la pagina que estan dentro de la cajas */
+.caja img{
+    height: 100%;
+    width: 210px;
+    align-items: auto;
+}
+ .caja{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+
+  
+ }
+
+ /*esto de la el efecto de sombra y resaltado de la cajas */
+  .caja:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    /*este hace que el efecto se resalte y se mueva a la hora de pasar el cursor*/
+    transform: translateY(-3%);
+
+  }
+  /*esto centra las letras de las cajas  y le da espacios entre ellas*/
+  .caja .contenido{
+    padding: 15px;
+    text-align: center;
+  }
+   /* esto le da un acabado  como el color gris y espacios entre las letras del texto*/
+  .caja .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+  }
+  /*esto modifica el emcabezado de bajo de la imagen de las cajas */
+  .caja .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  /*esto modifica el los enlaces de la caja dando estilo a los botones */
+  .caja .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  .caja .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+  }
+
+  /*********************************************AQUI TERMINA LAS CAJA *****************************************************************/
+  
+
+  /*********************************************ARTICULOS Y  FONDOS*********************************************************************/
+   .body2{
+    background-color: #2196f3;
+    display: flex;
+    height: 1000px;
+   }
+  /*.articulo1{
+    
+    background-color: #5800FF;
+    display: flex;
+    height: 300px;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 20px 5px 5px rgba(0,0,0,0.4);*/
+
+  .body2{
+    font-family:'Padauk', 'sans-serif' ;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#72FFFF;
+    text-decoration: none;
+       
+
+  } 
+  /*******************************************CIERRE DE ARTICULOS Y FONDOS****************************************************************/
+  
+
+
+ .contenedor_a1{
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+ }
+
+main{
+  min-height: 100vh;
+  background-color:#393C83 ;
+  border-radius: 25px;
+}
+
+main .contenido_a1 p{
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #44D9E6;
+}
+main .contenido_a1 .titulo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  padding-top: 40px ;
+}
+main .contenido_a1 flecha{
+  font-size: 14px;
+  color: #858585;
+}
+
+/*============ ASIDE =================*/
+/*====================================*/
+
+
+aside{
+  min-height: 30%;
+  margin:  40px 20px 20px 0;
+  background-color: #1d2f3d;
+  padding: 20px;
+  border-radius: 3px;
+  position: sticky;
+  top: 20px;
+}
+aside .titulo{
+  font-family:sans-serif,monospace;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color:#f2f2f2;
+}
+aside .indice a {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffcd48;
+}
